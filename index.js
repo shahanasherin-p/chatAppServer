@@ -40,3 +40,7 @@ server.listen(PORT, () => {
   console.log("server is running on PORT:" + PORT);
   connectDB();
 });
+
+app.get('/',(req,res)=>{
+  res.status(200).send(`<h1 style="color:red;">CHATSERVER STARTED AT PORT AND WAITING FOR CLIENT REQUEST<h1/>`)
+})
