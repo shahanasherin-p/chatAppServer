@@ -19,7 +19,7 @@ app.use(cookieParser());
 app.use(
   cors({
     origin: "https://chat-app-ochre-eta.vercel.app",
-    origin: "http://localhost:5173",
+    // origin: "http://localhost:5173",
     credentials: true,
   })
 );
